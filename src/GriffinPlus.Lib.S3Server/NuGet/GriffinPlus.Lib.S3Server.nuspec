@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<package>
+	<metadata minClientVersion="3.3">
+		<id>GriffinPlus.Lib.Logging</id>
+		<version>$version$</version>
+		<authors>Sascha Falk</authors>
+		<copyright>Copyright (c) 2023 Sascha Falk and Contributors</copyright>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>An ASP.NET Core controller providing an Amazon S3 compliant S3 interface.</description>
+		<license type="expression">MIT</license>
+		<projectUrl>https://github.com/GriffinPlus/dotnet-libs-s3server</projectUrl>
+		<icon>images/nuget-icon.png</icon>
+		<tags>s3</tags>
+		<dependencies>
+			<group targetFramework="net7.0">
+				<dependency id="GriffinPlus.Lib.Logging.Interface" version="[1.1.1,2)" include="all" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="..\..\..\res\nuget-icon.png" target="images\" />
+		<file src="..\..\..\_build\.out\GriffinPlus.Lib.S3Server\AnyCPU.Release\net7.0\GriffinPlus.Lib.S3Server.dll" target="lib\net7.0" />
+		<file src="..\..\..\_build\.out\GriffinPlus.Lib.S3Server\AnyCPU.Release\net7.0\GriffinPlus.Lib.S3Server.pdb" target="lib\net7.0" />
+		<file src="..\..\..\_build\.out\GriffinPlus.Lib.S3Server\AnyCPU.Release\net7.0\GriffinPlus.Lib.S3Server.xml" target="lib\net7.0" />
+	</files>
+</package>

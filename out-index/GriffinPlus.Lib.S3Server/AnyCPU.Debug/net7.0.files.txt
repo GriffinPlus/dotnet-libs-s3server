@@ -1,0 +1,4 @@
+﻿.\GriffinPlus.Lib.S3Server.deps.json
+.\GriffinPlus.Lib.S3Server.dll
+.\GriffinPlus.Lib.S3Server.pdb
+.\GriffinPlus.Lib.S3Server.xml
