@@ -3,6 +3,9 @@
 // The source code is licensed under the MIT license.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GriffinPlus.Lib.S3Server
@@ -11,6 +14,8 @@ namespace GriffinPlus.Lib.S3Server
 	/// An ASP.NET Core controller providing an Amazon S3 compliant interface.
 	/// </summary>
 	[ApiController]
+	// [Route("[controller]")]
+	[Route("")]
 	public class S3Controller : ControllerBase
 	{
 		/// <summary>
@@ -20,5 +25,18 @@ namespace GriffinPlus.Lib.S3Server
 		{
 
 		}
+
+		private static readonly string[] Summaries = new[]
+		{
+			"Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+		};
+
+
+		[HttpGet]
+		public IEnumerable<string> Get()
+		{
+			return new[] { "A", "B", "C" };
+		}
+
 	}
 }
